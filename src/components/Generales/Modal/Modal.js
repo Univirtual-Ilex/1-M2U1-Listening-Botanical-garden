@@ -37,7 +37,7 @@ const ModalBase = ( { w, ok, err, finished, visible,nxtUrl,repeatUrl, ...props }
         } else if ( err ) {
             return (
             <div  className='content-error'> 
-                <img src='./src/ok.png' alt='Try Again'/>
+                <img src='./src/err.png' alt='Try Again'/>
                 <p>Try Again</p>
             </div>)
         } else {

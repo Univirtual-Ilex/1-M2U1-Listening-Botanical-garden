@@ -14,11 +14,19 @@ const mistyles = css`
 
 }
 .btn-audio{
-    margin-left: 30em;
-    margin-top: 1em;
+    margin-left: 32em;
+    margin-top: 2em;
 }
 .mb-2{
     margin-bottom: 1em;
+    color: ${Ilex.textos};
+}
+.columns{
+    margin-top: -1em;
+    color: rgba(128,128,128,1);
+}
+.next{
+    margin-top: 0.5em;
 }
 `
 

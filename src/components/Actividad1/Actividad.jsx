@@ -83,7 +83,7 @@ const Actividad_base = ({staticContext, ...props}) => {
     return (
         <Container bgImage='./src/bg_actividad1.png' h={46} w={80} {...props}>
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='From the previous activity responds' />
+                <ButtonUi icon='ilx-ayuda' tooltip='Listen the audio and answer correctly' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
             </UiButtonsContainer>           
             <IRow w={85} align="center">
@@ -94,7 +94,7 @@ const Actividad_base = ({staticContext, ...props}) => {
                 </ICol>
                 <ButtonAudio className="btn-audio" src={'./media/audio.mp3'} />
             </IRow>
-            <IRow  w={85} justify={'center'} className="columns" align={'center'} className="questions">
+            <IRow  w={85} justify={'center'} className="columns" align={'center'}>
                 {questions}
             </IRow>
              <IRow pt={4}>

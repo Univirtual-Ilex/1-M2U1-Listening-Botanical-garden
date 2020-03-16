@@ -22,7 +22,7 @@ const styles = css`
 export const draggableBlock = css`
     width:${ props => props.w || 100}%;
     font-size:0.7em;
-    background-color: ${Ilex.dragItem};
+    background-color: #F0F0F0;
     padding:0.25em 0.5em;
     margin:0.25em 0;
     cursor:move;

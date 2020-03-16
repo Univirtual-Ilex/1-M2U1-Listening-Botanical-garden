@@ -7,7 +7,7 @@ import Ilex from '../../App/variables'
 import { ProgressbarContainer, UiButtonsContainer } from '../Actividad1/Actividad_styles'
 // Components
 import Container from '../Container'
-import ProgressBar from '../ProgressBar'
+import ButtonCheck from '../ButtonCheck'
 import MainTitle from '../MainTitle'
 import { IRow, ICol } from '../Grid'
 import { DraggableBlock } from '../Draggable'
@@ -69,7 +69,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
         <Container bgImage='./src/bg_actividad1.png' {...props}>
 
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='slide the sentences to organize them, then press check to verify if it is right or wrong, press hint if you need help   ' />
+                <ButtonUi icon='ilx-ayuda' tooltip='Move the boxes in the order in which you heard the conversation' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' />
             </UiButtonsContainer>
 
@@ -80,7 +80,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
                 </ICol>
             </IRow>
             
-            <IRow align='center' justify='flex-start' w={80} pt={3}>
+            <IRow align='center' justify='flex-start' w={80} h={55} pt={3} className="boxes">
                 <ReactSortable
                     list={Data}
                     setList={setData}
@@ -93,6 +93,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
                 </ReactSortable>
            
             </IRow>
+            
             <Modal visible={Feedback} ok={ok} err={err} w={25} repeatUrl={'/actividad2'} finished={ok} />
         </Container>
 
