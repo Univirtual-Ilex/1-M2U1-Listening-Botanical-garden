@@ -70,7 +70,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
 
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Move the boxes in the order in which you heard the conversation' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.reload()} } />
             </UiButtonsContainer>
 
 
@@ -94,7 +94,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
            
             </IRow>
             
-            <Modal visible={Feedback} ok={ok} err={err} w={25} repeatUrl={'/actividad2'} finished={ok} />
+            <Modal visible={Feedback} ok={ok} err={err} w={25} repeatUrl={'#/actividad2'} finished={ok} />
         </Container>
 
     )
